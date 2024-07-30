@@ -10,7 +10,10 @@ public class SumOfLargestNumbers {
         double num3 = scanner.nextDouble();
 
         double sum = sumOfLargest(num1, num2, num3);
+        double average = calculateAverage(num1, num2, num3);
+
         System.out.println("The sum of the largest two numbers is: " + sum);
+        System.out.println("The average of the three numbers is: " + average);
     }
 
     public static double sumOfLargest(double a, double b, double c) {
@@ -21,5 +24,9 @@ public class SumOfLargestNumbers {
         } else {
             return a + b;
         }
+    }
+
+    public static double calculateAverage(double a, double b, double c) {
+        return (a + b + c) / 3;
     }
 }
